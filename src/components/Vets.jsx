@@ -56,7 +56,7 @@ const Vets = () => {
   useEffect(() => {
     const fetchVets = async () => {
       try {
-        const { data } = await axios.get('http://localhost:5000/auth/vets', {
+        const { data } = await axios.get('https://pet-connect-azure.vercel.app/auth/vets', {
           withCredentials: true,
         });
         setVets(data.vets);
