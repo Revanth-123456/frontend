@@ -236,7 +236,7 @@ const BlogDetail = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/blogs/${id}`);
+        const response = await axios.get(`https://pet-connect-azure.vercel.app/api/blogs/${id}`);
         setBlog(response.data);
         setEditedContent(response.data.Content);
         setLoading(false);
