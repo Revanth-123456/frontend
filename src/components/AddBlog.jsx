@@ -52,7 +52,7 @@ const AddBlog = () => {
       const imageBase64 = await fileToBase64(file);
 
       await axios.post(
-        "http://localhost:5000/api/blogs",
+        "https://pet-connect-git-main-revanth-v-ss-projects.vercel.app/api/blogs",
         {
           Title: title,
           Content: content,
