@@ -70,7 +70,7 @@ export default function UserRegister({ onRegisterSuccess, onClose }) {
     try {
       setIsLoading(true);
 
-      const response = await axios.post('http://localhost:5000/auth/register', formData, {
+      const response = await axios.post('https://pet-connect-git-main-revanth-v-ss-projects.vercel.app/auth/register', formData, {
         headers: {
           'Content-Type': 'application/json',
         },
